@@ -18,7 +18,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
 
-background: linear-gradient(to top, #fff 95%, #142e8e 5%);}
+background: #fff;}
 
 h1,
 h2,
@@ -328,7 +328,8 @@ img {
   position: relative;
   z-index: 100;
   width: 100%;
-  height: 125px; }
+  height: 125px;
+  background: #142e8e;}
   .header-area .top-header {
     width: 100%;
     height: 95px; }
