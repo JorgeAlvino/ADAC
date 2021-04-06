@@ -893,7 +893,7 @@ img {
     height: 110px;
     background: #61ba6d;
     background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
-    background: linear-gradient(to right, #61ba6d, #83c331);
+    background: linear-gradient(to bottom, #fff700, #142e8e);
     position: absolute;
     bottom: -60px;
     -webkit-transform: translateX(-50%);

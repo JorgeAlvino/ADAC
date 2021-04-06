@@ -102,11 +102,24 @@
         $.preventDefault()
     });
 
+    $('a.page-scroll').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 40
+          }, 900);
+          return false;
+        }
+      }
+    });
+
     // :: 8.0 wow Active Code
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
-    
+
     // :: 9.0 Sticky Active Code
     if ($.fn.sticky) {
         $(".academy-main-menu").sticky({
