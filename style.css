@@ -1193,8 +1193,8 @@ img {
         filter: alpha(opacity=0); }
     .single-accordion h6 a.collapsed {
       background: #61ba6d;
-      background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
-      background: linear-gradient(to right, #61ba6d, #83c331);
+      background: -webkit-linear-gradient(to right, #142e8e, #fff700);
+      background: linear-gradient(to right, #142e8e, #fff700);
       color: #ffffff; }
       .single-accordion h6 a.collapsed span.accor-close {
         opacity: 0;
