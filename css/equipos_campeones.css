@@ -1,11 +1,18 @@
+body{
+  background-color: white;
+}
+
 .carousel {
     position: relative;
+    margin: auto;
+    width: 70%;
   }
   
   .carousel-caption {
     position: absolute;
     background: rgba(0,0,0,0.4);
     padding: 15px 10px;
+    border-radius: 50px;
   }
   
   .carousel-control-prev,
@@ -16,9 +23,16 @@
   #descripcion_campeonato{
       color: rgb(206, 185, 185);
       font-family: Comic Sans MS;
-      font-size: 15px;
+      font-size: 17px;
+      text-align: center;
   }
 
 #img_campeones{
-      border: solid 5px rgba(240, 239, 239, 0.747);
+      border: solid 5px rgba(255, 255, 255, 0.911);
+  }
+
+ .titulo-campeon{
+  font-family: Candara;
+  color: rgb(255, 255, 255) !important;
+  text-align: center !important;
   }

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+
+div.contenedor-valores {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin: 50px;
+}
+div.contenedor-valores div.cardvalor {
+  color: white;
+  background: rgba(36, 36, 36, 0.432);
+  height: 100%;
+  width: 50vh;
+  filter: drop-shadow(0 1px 5px rgba(37,37,37,0.3));
+  animation: slideIn 0.3s 0.3s ease-out both;
+  display: flex;
+  flex-direction: column;
+}
+div.contenedor-valores div.cardvalor h2,
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor {
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+div.contenedor-valores div.cardvalor h2 {
+  font-weight: 300;
+}
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor span.cardvalor__optionvalor--toggle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor div.cardvalor__optionvalor--descriptionvalor dl dt {
+  font-weight: bold;
+  font-size: 1.15rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+ 
+}
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor div.cardvalor__optionvalor--descriptionvalor dl dd {
+  font-size: 1.1rem;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+div.contenedor-valores div.cardvalor div.cardvalor__optionvalor div.cardvalor__optionvalor--descriptionvalor dl dd.active {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  transition: visibility 0.3s ease, opacity 0.3s 0.2s ease;
+}
+@-moz-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-o-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+dt{
+  font-size: 14px !important;
+}
+
+dd{
+  font-size: 14px !important;
+}
+
+#titulo-valores{
+  font-family: Garamond; 
+  text-align: center;
+  color: white;
+}
